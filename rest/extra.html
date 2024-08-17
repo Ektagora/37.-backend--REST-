@@ -1,0 +1,65 @@
+https://developer.x.com/en/docs/api-reference-index
+
+https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
+
+
+crud opeartions--
+get - retrives resources
+post - submits new data to the server
+put - updates existing data
+patch - update existing data partially
+delete - removes data
+
+
+post - username , content , --> view , individual post view, edit, delete
+
+resource --> CRUD
+
+
+creating restful apis---
+get - /posts - to get data for all posts - index (main chij)
+POST - /posts - to add a new post - create
+GET - /posts/:id - to get one post (using id) - view
+PATCH - /posts/:id - to update specific post - update
+DELETE - /posts/:id - to delete specific post - destroy
+
+
+Implement : post/posts
+create route
+POST - /posts - to add new post
+
+2 routes 
+serve the form - GET - /posts/new
+add the new posts - POST - /posts
+
+(user, content) - form
+POST -- new post add to Arr
+
+1. - res.send() -- text , html, object
+2. - res.render() -- ejs file
+3. - res.redirect(URL) -- url
+
+
+
+// implement -- GET/posts/:id
+show route
+GET - /posts:id - to get one post(using id)
+
+create id for posts ----
+UUID Pakage
+universelly unique identifier
+npm install uuid
+
+
+implement -- PATCH/posts/:id/
+update route
+PATCH - /posts/:id - to update specific post
+
+
+methode override
+npm install method-override
+
+
+implement -- /post/:id
+destroy route
+Delete /posts/:id to delete specific post
